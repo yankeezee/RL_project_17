@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+_vizdoom/
+_vizdoom.ini
+results/
+*.pt
