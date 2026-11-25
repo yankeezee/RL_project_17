@@ -1,0 +1,9 @@
+test_channel_starts_available_and_is_reproducible (test_demo.DemoChecks.test_channel_starts_available_and_is_reproducible) ... ok
+test_delivered_without_target_differs_from_outage (test_demo.DemoChecks.test_delivered_without_target_differs_from_outage) ... ok
+test_long_channel_matches_specified_transition_probabilities (test_demo.DemoChecks.test_long_channel_matches_specified_transition_probabilities) ... ok
+test_outage_never_updates_target_position_velocity_or_frame (test_demo.DemoChecks.test_outage_never_updates_target_position_velocity_or_frame) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.509s
+
+OK

@@ -1,0 +1,13 @@
+{
+  "tests": 65,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "seconds": 11.264,
+  "synthetic": true,
+  "note": "No ViZDoom training or paired evaluation was run",
+  "frequency_test_draws_per_method": 200000,
+  "frequency_methods": 4,
+  "frequency_seed": 1037,
+  "family_wise_alpha_per_method": 1e-06
+}

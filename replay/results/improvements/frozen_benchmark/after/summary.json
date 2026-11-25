@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "synthetic": true,
+  "source_sha256": "b129aa98bb38446eda2853708d4dfed55c818e0234c47a3b45bcd62e14d67f54",
+  "buffer_size": 50000,
+  "buffer_outage_fraction": 0.25,
+  "beta": 0.7,
+  "methods": {
+    "uniform": {
+      "expected_outage_mass": 0.25,
+      "allocation_difference": 0.0,
+      "allocation_ratio": 1.0,
+      "probability_min": 2e-05,
+      "probability_max": 2e-05,
+      "effective_probability_support": 49999.99999999997,
+      "probability_quantiles": [
+        2e-05,
+        2e-05,
+        2e-05,
+        2e-05,
+        2e-05
+      ]
+    },
+    "per": {
+      "expected_outage_mass": 0.5266825314261259,
+      "allocation_difference": 0.27668253142612587,
+      "allocation_ratio": 2.1067301257045035,
+      "probability_min": 8.945081333987292e-07,
+      "probability_max": 0.000483134918270502,
+      "effective_probability_support": 24503.165262694678,
+      "probability_quantiles": [
+        8.945081333987292e-07,
+        8.15873558760211e-06,
+        1.3253824967578152e-05,
+        2.3859491440834617e-05,
+        0.000483134918270502
+      ]
+    },
+    "mixture": {
+      "expected_outage_mass": 0.388341265713063,
+      "allocation_difference": 0.138341265713063,
+      "allocation_ratio": 1.553365062852252,
+      "probability_min": 1.0447254066699365e-05,
+      "probability_max": 0.000251567459135251,
+      "effective_probability_support": 39678.18847667694,
+      "probability_quantiles": [
+        1.0447254066699365e-05,
+        1.4079367793801056e-05,
+        1.6626912483789076e-05,
+        2.1929745720417308e-05,
+        0.000251567459135251
+      ]
+    },
+    "grouped": {
+      "expected_outage_mass": 0.25,
+      "allocation_difference": 0.0,
+      "allocation_ratio": 1.0,
+      "probability_min": 1.4174019439224175e-06,
+      "probability_max": 0.0002293292873043901,
+      "effective_probability_support": 34702.564741083166,
+      "probability_quantiles": [
+        1.4174019439224175e-06,
+        1.1216190832542196e-05,
+        1.6706462863760157e-05,
+        2.4836695507342275e-05,
+        0.0002293292873043901
+      ]
+    }
+  }
+}

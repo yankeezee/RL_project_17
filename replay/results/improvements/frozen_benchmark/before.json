@@ -1,0 +1,16 @@
+{
+  "synthetic": true,
+  "label": "before",
+  "seed": 5412,
+  "n": 50000,
+  "repetitions": 3,
+  "seconds": [
+    3.619187799980864,
+    3.687817800004268,
+    3.3906642999791075
+  ],
+  "median_seconds": 3.619187799980864,
+  "source_sha256": "b129aa98bb38446eda2853708d4dfed55c818e0234c47a3b45bcd62e14d67f54",
+  "probabilities_csv_sha256": "3f10e74cac52701007d909ac219f17e2e2bf977faf720a59d979da4f7d84e51f",
+  "summary_json_sha256": "bc2bf83c80c02bd3e001dbd7942edefb8a7e2d42a9da764c60a40604044965d0"
+}

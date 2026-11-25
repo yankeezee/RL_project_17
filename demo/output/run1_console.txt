@@ -1,0 +1,44 @@
+REAL VIZDOOM ENGINE INITIALIZED
+{"mode": "clean", "episode": 0, "scenario_seed": 20261125, "mask_seed": 20271125, "policy": "untrained_heuristic", "hit": 0, "missed_shots": 1, "timeout": 0, "unresolved_shots_at_timeout": 0, "actual_shots": 1, "outcome": "miss", "return": -0.12700000000000009, "decisions": 32, "executed_tics": 127, "start_tic": 16, "missing_decisions": 0, "realized_missing_fraction": 0.0, "delivered_without_target_decisions": 0, "initial_frame_sha256": "8c134bb1ef1ad376e69ab492852c818c20ae56b6496253b0a6ee290fc98bec5d"}
+{"mode": "clean", "episode": 1, "scenario_seed": 20261126, "mask_seed": 20271126, "policy": "untrained_heuristic", "hit": 0, "missed_shots": 1, "timeout": 0, "unresolved_shots_at_timeout": 0, "actual_shots": 1, "outcome": "miss", "return": -0.11900000000000009, "decisions": 30, "executed_tics": 119, "start_tic": 16, "missing_decisions": 0, "realized_missing_fraction": 0.0, "delivered_without_target_decisions": 0, "initial_frame_sha256": "48ee7243a672b023a944b70d34fd9de82311ccf5fd4f8327e1c2bdedc5d05b0e"}
+{"mode": "clean", "episode": 2, "scenario_seed": 20261127, "mask_seed": 20271127, "policy": "untrained_heuristic", "hit": 0, "missed_shots": 1, "timeout": 0, "unresolved_shots_at_timeout": 0, "actual_shots": 1, "outcome": "miss", "return": -0.11900000000000009, "decisions": 30, "executed_tics": 119, "start_tic": 16, "missing_decisions": 0, "realized_missing_fraction": 0.0, "delivered_without_target_decisions": 0, "initial_frame_sha256": "9d00f317f8fa17b3b07356b482118d4bac0cbfbaf04a79631b30d3d2cdc6e7e1"}
+{"mode": "clean", "episode": 3, "scenario_seed": 20261128, "mask_seed": 20271128, "policy": "untrained_heuristic", "hit": 1, "missed_shots": 0, "timeout": 0, "unresolved_shots_at_timeout": 0, "actual_shots": 1, "outcome": "hit", "return": 0.8939999999999999, "decisions": 27, "executed_tics": 106, "start_tic": 16, "missing_decisions": 0, "realized_missing_fraction": 0.0, "delivered_without_target_decisions": 0, "initial_frame_sha256": "09afe4e035f69e7550769c3fd06c23dfee0ec0cf8af3f948213894385c3e5e76"}
+{"mode": "clean", "episode": 4, "scenario_seed": 20261129, "mask_seed": 20271129, "policy": "untrained_heuristic", "hit": 0, "missed_shots": 1, "timeout": 0, "unresolved_shots_at_timeout": 0, "actual_shots": 1, "outcome": "miss", "return": -0.11900000000000009, "decisions": 30, "executed_tics": 119, "start_tic": 16, "missing_decisions": 0, "realized_missing_fraction": 0.0, "delivered_without_target_decisions": 0, "initial_frame_sha256": "c9480b44a81e051a8f78be64f705e9739571336b8826f1e29a332597c022f931"}
+{"mode": "clean", "episode": 5, "scenario_seed": 20261130, "mask_seed": 20271130, "policy": "untrained_heuristic", "hit": 0, "missed_shots": 1, "timeout": 0, "unresolved_shots_at_timeout": 0, "actual_shots": 1, "outcome": "miss", "return": -0.11900000000000009, "decisions": 30, "executed_tics": 119, "start_tic": 16, "missing_decisions": 0, "realized_missing_fraction": 0.0, "delivered_without_target_decisions": 0, "initial_frame_sha256": "c38f8957b0bee06d25042d4e2b534664722ff9dd5f7f49e3162bde7a01fd974a"}
+{"mode": "burst", "episode": 0, "scenario_seed": 20261125, "mask_seed": 20271125, "policy": "untrained_heuristic", "hit": 0, "missed_shots": 1, "timeout": 0, "unresolved_shots_at_timeout": 0, "actual_shots": 1, "outcome": "miss", "return": -0.12700000000000009, "decisions": 32, "executed_tics": 127, "start_tic": 16, "missing_decisions": 0, "realized_missing_fraction": 0.0, "delivered_without_target_decisions": 0, "initial_frame_sha256": "8c134bb1ef1ad376e69ab492852c818c20ae56b6496253b0a6ee290fc98bec5d"}
+{"mode": "burst", "episode": 1, "scenario_seed": 20261126, "mask_seed": 20271126, "policy": "untrained_heuristic", "hit": 0, "missed_shots": 1, "timeout": 0, "unresolved_shots_at_timeout": 0, "actual_shots": 1, "outcome": "miss", "return": -0.11900000000000009, "decisions": 30, "executed_tics": 119, "start_tic": 16, "missing_decisions": 5, "realized_missing_fraction": 0.16666666666666666, "delivered_without_target_decisions": 0, "initial_frame_sha256": "48ee7243a672b023a944b70d34fd9de82311ccf5fd4f8327e1c2bdedc5d05b0e"}
+{"mode": "burst", "episode": 2, "scenario_seed": 20261127, "mask_seed": 20271127, "policy": "untrained_heuristic", "hit": 0, "missed_shots": 1, "timeout": 0, "unresolved_shots_at_timeout": 0, "actual_shots": 1, "outcome": "miss", "return": -0.11900000000000009, "decisions": 30, "executed_tics": 119, "start_tic": 16, "missing_decisions": 10, "realized_missing_fraction": 0.3333333333333333, "delivered_without_target_decisions": 0, "initial_frame_sha256": "9d00f317f8fa17b3b07356b482118d4bac0cbfbaf04a79631b30d3d2cdc6e7e1"}
+{"mode": "burst", "episode": 3, "scenario_seed": 20261128, "mask_seed": 20271128, "policy": "untrained_heuristic", "hit": 0, "missed_shots": 1, "timeout": 0, "unresolved_shots_at_timeout": 0, "actual_shots": 1, "outcome": "miss", "return": -0.12700000000000009, "decisions": 32, "executed_tics": 127, "start_tic": 16, "missing_decisions": 16, "realized_missing_fraction": 0.5, "delivered_without_target_decisions": 0, "initial_frame_sha256": "09afe4e035f69e7550769c3fd06c23dfee0ec0cf8af3f948213894385c3e5e76"}
+{"mode": "burst", "episode": 4, "scenario_seed": 20261129, "mask_seed": 20271129, "policy": "untrained_heuristic", "hit": 0, "missed_shots": 1, "timeout": 0, "unresolved_shots_at_timeout": 0, "actual_shots": 1, "outcome": "miss", "return": -0.11900000000000009, "decisions": 30, "executed_tics": 119, "start_tic": 16, "missing_decisions": 17, "realized_missing_fraction": 0.5666666666666667, "delivered_without_target_decisions": 0, "initial_frame_sha256": "c9480b44a81e051a8f78be64f705e9739571336b8826f1e29a332597c022f931"}
+{"mode": "burst", "episode": 5, "scenario_seed": 20261130, "mask_seed": 20271130, "policy": "untrained_heuristic", "hit": 0, "missed_shots": 1, "timeout": 0, "unresolved_shots_at_timeout": 0, "actual_shots": 1, "outcome": "miss", "return": -0.11900000000000009, "decisions": 30, "executed_tics": 119, "start_tic": 16, "missing_decisions": 5, "realized_missing_fraction": 0.16666666666666666, "delivered_without_target_decisions": 0, "initial_frame_sha256": "c38f8957b0bee06d25042d4e2b534664722ff9dd5f7f49e3162bde7a01fd974a"}
+{
+  "clean": {
+    "episodes": 6,
+    "hits": 1,
+    "missed_shots": 5,
+    "timeouts": 0,
+    "shots": 6,
+    "outcomes": {
+      "miss": 5,
+      "hit": 1
+    },
+    "missing_decisions": 0,
+    "decisions": 179,
+    "delivered_without_target_decisions": 0,
+    "mean_return": 0.04849999999999991
+  },
+  "burst": {
+    "episodes": 6,
+    "hits": 0,
+    "missed_shots": 6,
+    "timeouts": 0,
+    "shots": 6,
+    "outcomes": {
+      "miss": 6
+    },
+    "missing_decisions": 53,
+    "decisions": 184,
+    "delivered_without_target_decisions": 0,
+    "mean_return": -0.12166666666666676
+  }
+}

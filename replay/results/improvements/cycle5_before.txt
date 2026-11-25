@@ -1,0 +1,11 @@
+F                                                                        [100%]
+================================== FAILURES ===================================
+___________ test_frozen_minimum_reductions_are_constant_not_per_row ___________
+tests\test_frozen_scaling.py:27: in test_frozen_minimum_reductions_are_constant_not_per_row
+    assert Counter.calls <= 8, f"Full-vector minimum reductions: {Counter.calls}"
+E   AssertionError: Full-vector minimum reductions: 804
+E   assert 804 <= 8
+E    +  where 804 = <class 'test_frozen_scaling.test_frozen_minimum_reductions_are_constant_not_per_row.<locals>.Counter'>.calls
+=========================== short test summary info ===========================
+FAILED tests/test_frozen_scaling.py::test_frozen_minimum_reductions_are_constant_not_per_row
+1 failed in 1.13s

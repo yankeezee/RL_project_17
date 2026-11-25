@@ -4,3 +4,10 @@ _vizdoom/
 _vizdoom.ini
 results/
 *.pt
+
+# Commit replay evidence, but never installed demo binaries or Python caches.
+!replay/results/
+!replay/results/**
+demo/vendor/
+*.egg-info/
+.pytest_cache/

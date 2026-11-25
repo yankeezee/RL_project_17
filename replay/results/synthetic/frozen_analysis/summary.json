@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "synthetic": true,
+  "source_sha256": "030945ba427b4535f1f8dc0249ef92a292e8372905a1ecfdd805d5e9f455dcc1",
+  "buffer_size": 1000,
+  "buffer_outage_fraction": 0.2,
+  "beta": 1.0,
+  "methods": {
+    "uniform": {
+      "expected_outage_mass": 0.20000000000000007,
+      "allocation_difference": 5.551115123125783e-17,
+      "allocation_ratio": 1.0000000000000002,
+      "probability_min": 0.001,
+      "probability_max": 0.001,
+      "effective_probability_support": 999.9999999999998,
+      "probability_quantiles": [
+        0.001,
+        0.001,
+        0.001,
+        0.001,
+        0.001
+      ]
+    },
+    "per": {
+      "expected_outage_mass": 0.7984777260370877,
+      "allocation_difference": 0.5984777260370877,
+      "allocation_ratio": 3.992388630185438,
+      "probability_min": 0.00025190284245364046,
+      "probability_max": 0.003992388630185438,
+      "effective_probability_support": 308.7756419476607,
+      "probability_quantiles": [
+        0.00025190284245364046,
+        0.00025190284245364046,
+        0.00025190284245364046,
+        0.00025190284245364046,
+        0.003992388630185438
+      ]
+    },
+    "mixture": {
+      "expected_outage_mass": 0.4992388630185438,
+      "allocation_difference": 0.2992388630185438,
+      "allocation_ratio": 2.496194315092719,
+      "probability_min": 0.0006259514212268203,
+      "probability_max": 0.002496194315092719,
+      "effective_probability_support": 641.1697574388357,
+      "probability_quantiles": [
+        0.0006259514212268203,
+        0.0006259514212268203,
+        0.0006259514212268203,
+        0.0006259514212268203,
+        0.002496194315092719
+      ]
+    },
+    "grouped": {
+      "expected_outage_mass": 0.20000000000000007,
+      "allocation_difference": 5.551115123125783e-17,
+      "allocation_ratio": 1.0000000000000002,
+      "probability_min": 0.001,
+      "probability_max": 0.0010000000000000005,
+      "effective_probability_support": 999.9999999999993,
+      "probability_quantiles": [
+        0.001,
+        0.0010000000000000005,
+        0.0010000000000000005,
+        0.0010000000000000005,
+        0.0010000000000000005
+      ]
+    }
+  }
+}

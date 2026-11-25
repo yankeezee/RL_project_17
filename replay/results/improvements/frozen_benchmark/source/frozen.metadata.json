@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "synthetic": true,
+  "alpha": 0.6,
+  "epsilon": 1e-06,
+  "buffer_size": 50000,
+  "group_sizes": [
+    37500,
+    12500
+  ],
+  "sha256": "b129aa98bb38446eda2853708d4dfed55c818e0234c47a3b45bcd62e14d67f54",
+  "metadata": {
+    "seed": 5412
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "tests": 100,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "seconds": 13.745,
+  "completed_cycles": 5,
+  "no_vizdoom_training_or_paired_evaluation": true,
+  "test_stdout": "results/improvements/final_pytest.txt",
+  "research_log": "RESEARCH_LOG.md",
+  "next_steps": "NEXT_STEPS.md"
+}

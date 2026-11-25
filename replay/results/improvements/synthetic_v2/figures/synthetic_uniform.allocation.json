@@ -1,0 +1,11 @@
+{
+  "run_id": "synthetic_uniform",
+  "method": "uniform",
+  "synthetic": true,
+  "draws": 2560,
+  "outage_draws": 490.0,
+  "expected_outage_draws_from_time_matched_occupancy": 477.25,
+  "allocation_difference": 0.00498046875,
+  "allocation_ratio": 1.0267155578837088,
+  "note": "Comparison uses sum(batch_size * buffer_share_at_sampling), not final occupancy"
+}

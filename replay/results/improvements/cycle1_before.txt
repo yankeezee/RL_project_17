@@ -1,0 +1,61 @@
+FF                                                                       [100%]
+================================== FAILURES ===================================
+_ test_invalid_update_never_mutates_parameters_adam_or_priorities[nan_reward] _
+
+failure = 'nan_reward'
+
+    @pytest.mark.parametrize("failure", ["nan_reward", "gradient_overflow"])
+    def test_invalid_update_never_mutates_parameters_adam_or_priorities(failure):
+        online, target = ScaledLinear(1, 1), torch.nn.Linear(1, 1)
+        with torch.no_grad():
+            online.weight.zero_()
+            online.bias.zero_()
+        optimizer = torch.optim.Adam(online.parameters(), lr=1e-4)
+        buffer = ReplayBuffer(1)
+        # finite forward/loss but accumulated backward gradient overflows for large input.
+        observation = np.array([3e38 if failure == "gradient_overflow" else 1.], dtype=np.float32)
+        transition = Transition(observation, 0, float("nan") if failure == "nan_reward" else 2.,
+                                None, True, False)
+        buffer.add(transition, current_delivered=True, next_delivered=None, terminated=True)
+        parameters = [p.detach().clone() for p in online.parameters()]
+        state = copy.deepcopy(optimizer.state_dict())
+        priorities = buffer.snapshot()["raw_priority"].copy()
+        with pytest.raises(ValueError, match="finite"):
+            learner_step(buffer=buffer, online=online, target=target, optimizer=optimizer,
+                         decisions=5000, optimizer_step=1)
+        for old, new in zip(parameters, online.parameters()):
+>           assert torch.equal(old, new)
+E           assert False
+E            +  where False = <built-in method equal of type object at 0x00007FFEB372F8D0>(tensor([[0.]]), Parameter containing:\ntensor([[nan]], requires_grad=True))
+E            +    where <built-in method equal of type object at 0x00007FFEB372F8D0> = torch.equal
+
+tests\test_learner_failures.py:37: AssertionError
+_ test_invalid_update_never_mutates_parameters_adam_or_priorities[gradient_overflow] _
+
+failure = 'gradient_overflow'
+
+    @pytest.mark.parametrize("failure", ["nan_reward", "gradient_overflow"])
+    def test_invalid_update_never_mutates_parameters_adam_or_priorities(failure):
+        online, target = ScaledLinear(1, 1), torch.nn.Linear(1, 1)
+        with torch.no_grad():
+            online.weight.zero_()
+            online.bias.zero_()
+        optimizer = torch.optim.Adam(online.parameters(), lr=1e-4)
+        buffer = ReplayBuffer(1)
+        # finite forward/loss but accumulated backward gradient overflows for large input.
+        observation = np.array([3e38 if failure == "gradient_overflow" else 1.], dtype=np.float32)
+        transition = Transition(observation, 0, float("nan") if failure == "nan_reward" else 2.,
+                                None, True, False)
+        buffer.add(transition, current_delivered=True, next_delivered=None, terminated=True)
+        parameters = [p.detach().clone() for p in online.parameters()]
+        state = copy.deepcopy(optimizer.state_dict())
+        priorities = buffer.snapshot()["raw_priority"].copy()
+>       with pytest.raises(ValueError, match="finite"):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE <class 'ValueError'>
+
+tests\test_learner_failures.py:33: Failed
+=========================== short test summary info ===========================
+FAILED tests/test_learner_failures.py::test_invalid_update_never_mutates_parameters_adam_or_priorities[nan_reward]
+FAILED tests/test_learner_failures.py::test_invalid_update_never_mutates_parameters_adam_or_priorities[gradient_overflow]
+2 failed in 9.15s

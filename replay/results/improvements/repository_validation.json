@@ -1,0 +1,12 @@
+{
+  "tests": 100,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "seconds": 20.347,
+  "replay_tests_run_from_repository_root": true,
+  "demo_unit_tests": 4,
+  "demo_real_episodes_validated": 12,
+  "environment_files_preserved": true,
+  "branch": "grouped_replay_implementation"
+}

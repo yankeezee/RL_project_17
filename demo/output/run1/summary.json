@@ -1,0 +1,73 @@
+{
+  "real_vizdoom": true,
+  "trained_agent": false,
+  "scenario": "predict_position",
+  "vizdoom": "1.3.3",
+  "numpy": "2.4.2",
+  "python": "3.13.11 | packaged by Anaconda, Inc. | (main, Dec 10 2025, 21:21:58) [MSC v.1929 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "imageio_ffmpeg": "0.8.1",
+  "seed": 20261125,
+  "episodes_per_mode": 6,
+  "burst": {
+    "p": 0.25,
+    "L_decisions": 4,
+    "recovery": 0.25,
+    "onset": 0.08333333333333333,
+    "episode_start_available": true,
+    "masks_pregenerated_independent_of_actions": true
+  },
+  "action_hold_tics": 4,
+  "engine_fps": 35,
+  "timeout_tics": 300,
+  "asset_sha256": {
+    "predict_position.cfg": "6c3c0e2c88b011deb1f7421645a841f3eaf4f547d1d050a420ddea129e5753c9",
+    "predict_position.wad": "a5a1bdbbfdbef2a505b496f6889d06751ba3431a50ec382fb303fcc4066917a6",
+    "freedoom2.wad": "a8772e088847032510d97ba2312406a6998f21cbab44d4ff10696faa9c0ecd4b"
+  },
+  "preview_episodes": [
+    0,
+    1
+  ],
+  "policy": {
+    "type": "untrained heuristic",
+    "lead_tics": 24,
+    "aim_tolerance_deg": 10,
+    "minimum_fire_decision": 16,
+    "learned_parameters": false,
+    "inputs": "delivered visible-target positions; previous delivered measurements; own heading and fixed spawn position",
+    "does_not_read": "hidden target positions, engine target velocity, observer truth image during outage, outcome counters"
+  },
+  "results": {
+    "clean": {
+      "episodes": 6,
+      "hits": 1,
+      "missed_shots": 5,
+      "timeouts": 0,
+      "shots": 6,
+      "outcomes": {
+        "miss": 5,
+        "hit": 1
+      },
+      "missing_decisions": 0,
+      "decisions": 179,
+      "delivered_without_target_decisions": 0,
+      "mean_return": 0.04849999999999991
+    },
+    "burst": {
+      "episodes": 6,
+      "hits": 0,
+      "missed_shots": 6,
+      "timeouts": 0,
+      "shots": 6,
+      "outcomes": {
+        "miss": 6
+      },
+      "missing_decisions": 53,
+      "decisions": 184,
+      "delivered_without_target_decisions": 0,
+      "mean_return": -0.12166666666666676
+    }
+  },
+  "wall_seconds": 51.744532900018385
+}

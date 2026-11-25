@@ -1,0 +1,44 @@
+{
+  "real_episodes_checked": 12,
+  "scenario_pairs_same_initial_pixels": true,
+  "reward_tics_hit_conservation_passed": true,
+  "no_target_memory_updates_during_outages": true,
+  "max_observed_burst_decisions": 12,
+  "media_decode": {
+    "clean": {
+      "frames": 877,
+      "fps": 35.0,
+      "seconds": 25.057142857142857,
+      "dimensions": [
+        416,
+        704
+      ]
+    },
+    "burst": {
+      "frames": 898,
+      "fps": 35.0,
+      "seconds": 25.65714285714286,
+      "dimensions": [
+        416,
+        704
+      ]
+    },
+    "comparison": {
+      "frames": 302,
+      "fps": 35.0,
+      "seconds": 8.628571428571428,
+      "dimensions": [
+        832,
+        704
+      ]
+    },
+    "gif": {
+      "frames": 64,
+      "duration_seconds": 8.4,
+      "size": [
+        704,
+        832
+      ]
+    }
+  }
+}

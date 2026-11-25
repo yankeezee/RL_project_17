@@ -1,0 +1,10 @@
+{
+  "run_id": "synthetic_grouped",
+  "seed": 20261125,
+  "regime": "SYNTHETIC_dynamic_stream",
+  "synthetic": true,
+  "schema_version": 1,
+  "metadata": {
+    "note": "No optimizer: fixed synthetic residuals; ring stream is shared across methods"
+  }
+}

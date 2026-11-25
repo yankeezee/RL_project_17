@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "synthetic": true,
+  "alpha": 0.6,
+  "epsilon": 1e-06,
+  "buffer_size": 1000,
+  "group_sizes": [
+    800,
+    200
+  ],
+  "sha256": "030945ba427b4535f1f8dc0249ef92a292e8372905a1ecfdd805d5e9f455dcc1",
+  "metadata": {
+    "seed": 20261125,
+    "description": "800 clean TD=1, 200 outage TD=100"
+  }
+}

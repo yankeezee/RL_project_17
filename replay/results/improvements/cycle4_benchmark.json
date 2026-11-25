@@ -1,0 +1,21 @@
+{
+  "synthetic": true,
+  "capacity": 50000,
+  "batch_size": 64,
+  "seed": 5411,
+  "measured_batches": 300,
+  "warmup_batches": 20,
+  "platform": "Windows-11-10.0.26200-SP0",
+  "numpy": "2.4.2",
+  "legacy": {
+    "median_ms": 4.013999991002493,
+    "p95_ms": 6.065030008903705
+  },
+  "batched": {
+    "median_ms": 0.6141500052763149,
+    "p95_ms": 1.1635299990302888
+  },
+  "median_speedup": 6.5358625034881115,
+  "all_priority_trees_bitwise_identical": true,
+  "scope": "priority refresh only; identical inputs; alternating order; one local CPU run"
+}

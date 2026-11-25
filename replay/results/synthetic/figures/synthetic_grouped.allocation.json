@@ -1,0 +1,11 @@
+{
+  "run_id": "synthetic_grouped",
+  "method": "grouped",
+  "synthetic": true,
+  "draws": 12800,
+  "outage_draws": 2902.0,
+  "expected_outage_draws_from_time_matched_occupancy": 2930.0,
+  "allocation_difference": -0.0021875,
+  "allocation_ratio": 0.990443686006826,
+  "note": "Comparison uses sum(batch_size * buffer_share_at_sampling), not final occupancy"
+}

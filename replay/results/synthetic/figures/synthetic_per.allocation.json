@@ -1,0 +1,11 @@
+{
+  "run_id": "synthetic_per",
+  "method": "per",
+  "synthetic": true,
+  "draws": 12800,
+  "outage_draws": 7046.0,
+  "expected_outage_draws_from_time_matched_occupancy": 2930.0,
+  "allocation_difference": 0.3215625,
+  "allocation_ratio": 2.404778156996587,
+  "note": "Comparison uses sum(batch_size * buffer_share_at_sampling), not final occupancy"
+}

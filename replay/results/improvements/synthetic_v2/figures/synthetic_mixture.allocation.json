@@ -1,0 +1,11 @@
+{
+  "run_id": "synthetic_mixture",
+  "method": "mixture",
+  "synthetic": true,
+  "draws": 2560,
+  "outage_draws": 939.0,
+  "expected_outage_draws_from_time_matched_occupancy": 477.25,
+  "allocation_difference": 0.18037109375,
+  "allocation_ratio": 1.9675222629649032,
+  "note": "Comparison uses sum(batch_size * buffer_share_at_sampling), not final occupancy"
+}
