@@ -7,7 +7,7 @@ import numpy as np
 import torch
 import torch.nn.functional as F
 
-from env import PredictPositionEnv, make_outage
+from env import PredictPositionEnv, make_outage, train_episode_seed, CURVE_SEED_BASE
 from networks import mlp, as_tensor, dqn_target
 from replay import ReplayBuffer
 
@@ -17,7 +17,7 @@ def evaluate_greedy(
     q_net,
     condition="clean",
     n_episodes=100,
-    seed=10000
+    seed=CURVE_SEED_BASE
 ):
     env = PredictPositionEnv(
         outage=make_outage(condition)
@@ -99,7 +99,8 @@ def train(
         sampler=sampler
     )
 
-    obs = env.reset(seed=seed)
+    episode_index = 0
+    obs = env.reset(seed=train_episode_seed(seed, episode_index))
 
     optimizer_steps = 0
     episode_return = 0.0
@@ -179,8 +180,9 @@ def train(
 
             episode_return = 0.0
 
+            episode_index += 1
             obs = env.reset(
-                seed=int(rng.integers(0, 2**31 - 1))
+                seed=train_episode_seed(seed, episode_index)
             )
         else:
             obs = next_obs
@@ -505,7 +507,7 @@ def train(
         q_net,
         condition=condition,
         n_episodes=100,
-        seed=10000
+        seed=CURVE_SEED_BASE
     )
 
     print("\n" + "=" * 60)
