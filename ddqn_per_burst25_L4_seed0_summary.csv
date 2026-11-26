@@ -1,0 +1,2 @@
+sampler,condition,seed,training_steps,optimizer_steps,greedy_return,greedy_hit_rate,training_seconds
+per,burst25_L4,0,300000,73751,0.03277999999999994,0.06,581.6458136290003

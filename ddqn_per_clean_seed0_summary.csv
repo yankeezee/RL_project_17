@@ -1,0 +1,2 @@
+sampler,condition,seed,training_steps,optimizer_steps,greedy_return,greedy_hit_rate,training_seconds
+per,clean,0,300000,73751,0.15306,0.13,582.087146416
